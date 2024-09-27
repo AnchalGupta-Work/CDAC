@@ -1,0 +1,28 @@
+// Problem: Write a Java program to check if a given number is an Armstrong number.
+
+
+class prob1 {
+    public static void main(String[] args) {
+        int num = 153;
+        int onum = num;
+        int digit = 0;
+        int size = String.valueOf(num).length();
+        int c = 0;
+        int sum = 0;
+        
+        
+          while(num!=0) {
+            digit = num%10; 
+            c = (int)Math.pow(digit,size);  
+            sum = sum+c;
+            num = num/10;
+}
+if(onum==sum) {
+    System.out.println("Armstrong");
+    }
+    else {
+        System.out.println("Not armstrong");
+    }
+
+    }
+    }

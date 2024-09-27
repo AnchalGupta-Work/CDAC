@@ -1,0 +1,18 @@
+//Problem: Write a Java program to find the square root of a given number (using integer approximation).
+
+
+class prob6 {
+    public static void main(String[] args) {
+    
+    int num = 10;
+    double sq = Math.sqrt(num);
+    double sq1 = Math.pow(num,.5);
+    System.out.println(sq);
+    System.out.println(sq1);
+    double sq2 = num/2;
+    System.out.println((sq2+(num/sq2))/2.0);
+       
+        }
+        
+    
+}

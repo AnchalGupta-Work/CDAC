@@ -1,0 +1,20 @@
+// Program to check if given year is leap or not
+// Time complexity is O(1) because operations remains constant
+// Space complexity is O(1) because input size remains constant
+
+class LeapYear {
+    public static void main(String[] args) {
+        leapCheck(2020); //testcases
+        leapCheck(1900);
+    }
+    //method to check if leap year
+    
+    public static void leapCheck(int y) {
+        if((y%4==0) && ((y%100!=0) || (y%400==0)) ) { // condition for leap year
+            System.out.println(y+ " is Leap a year");
+        }
+        else {
+            System.out.println(y+" is not a Leap year");
+        }
+    }
+}

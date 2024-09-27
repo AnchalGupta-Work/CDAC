@@ -1,0 +1,34 @@
+// Program to calculate the factorial of a given number.
+// Time Complexity: O(n) - The loop runs 'n' times to calculate the factorial.
+//Space Complexity: O(1) - Only a constant amount of space is used, regardless of 'n'.
+
+public class prob3 {
+
+    // Method to calculate the factorial of a number 'n'
+    public static void calculateFactorial(int n) {
+        
+        // Check if the number is negative
+        if (n < 0) {
+            System.out.println("Factorial is not defined for negative numbers.");
+            return;  // Exit the method early
+        }
+        
+        
+        int factorial = 1;  // Variable to hold the result of the factorial
+        
+        // Loop to calculate factorial
+        for (int i = 1; i <= n; i++) {
+            factorial *= i;  
+        }
+        
+        // Print the calculated factorial
+        System.out.println("The factorial of " + n + " is: " + factorial);
+    }
+    
+    // Main method to run the program
+    public static void main(String[] args) {
+        calculateFactorial(5);  // Test case
+        calculateFactorial(0);
+        calculateFactorial(-1);
+    }
+}

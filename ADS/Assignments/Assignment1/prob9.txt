@@ -1,0 +1,36 @@
+// Program to check if number is palindrome or not
+
+
+class PalindromeNum {
+    public static void main(String[] args) {
+        palindromeCheck(121);
+        palindromeCheck(-121);
+        palindromeCheck(243);
+        
+
+    }
+    //method to check if palindrome 
+     public static void palindromeCheck(int y) {
+         // base case if number is negative
+         if (y < 0) {
+        System.out.println("Not Palindrome");
+        return; 
+    }
+        int onum = y;
+        int rev = 0;
+        int digit = 0;
+        // loop to reverse the number
+        while(y!=0) {
+            digit = y%10;
+            rev = rev*10 + digit;
+            y = y/10;
+            }
+        // Compares the orignal number and reverse number    
+            if(onum==rev) {
+                System.out.println("Palindrome");
+            }
+            else {
+                System.out.println("Not Palindrome");
+            }
+    }
+}

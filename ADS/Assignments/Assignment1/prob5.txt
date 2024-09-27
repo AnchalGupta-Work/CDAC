@@ -1,0 +1,24 @@
+//Problem: Write a Java program to find the Greatest Common Divisor (GCD) of two numbers.
+
+
+class prob5 {
+    public static void main(String[] args) {
+     gcd(2,4);  
+    }
+        
+        
+    public static void gcd(int num1, int num2) {
+        while(num2!=0) {
+            int temp = num2;
+               num2 = num1%num2;
+               num1 = temp;
+            }
+            
+            System.out.println(num1);
+        }
+      
+        
+        
+        
+    
+}
