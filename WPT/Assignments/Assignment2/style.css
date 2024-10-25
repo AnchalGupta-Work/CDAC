@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+  }
+
+  
+  
+
+  header {
+    padding: 20px;
+    height: 680px;
+    background-image: url('https://img.freepik.com/free-vector/blue-abstract-background_78370-97.jpg?semt=ais_hybrid');
+    background-size: cover;
+    color: #fff;
+  }
+
+  .ssd {
+    background-image: url('https://img.freepik.com/free-vector/blue-abstract-background_78370-97.jpg?semt=ais_hybrid');
+    margin-bottom: 20px !important;
+    
+  }
+  .ssd1 {
+    padding: 20px;
+    margin-bottom: 0px;
+
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 120px;
+   
+  }
+
+section {
+max-width : 650px;
+margin : 0 auto;
+}
+
+  nav h2 {
+    font-size: 32px;
+  }
+
+  .w {
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 10px 24px;
+    color: white;
+    background: #08062d;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+  }
+
+  section {
+    text-align: center;
+  }
+
+  section button:nth-child(1) {
+    padding: 8px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    border: 0.5px solid #d3d3d3;
+    font-weight: 400;
+    color: #fff;
+    background: #08062d;
+    cursor: pointer;
+  }
+
+  h1 {
+    font-size: 64px;
+    margin-bottom: 20px;
+  }
+
+  .pa {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .btn1,
+  .btn2 {
+    padding: 10px 24px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17.5px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 20px 12px;
+  }
+
+  .btn1 {
+    background: #514DF8;
+  }
+
+  .btn2 {
+    background: #08062d;
+  }
+
+  main {
+    padding: 60px;
+  }
+
+  .flexdiv {
+    display: flex;
+    gap: 24px;
+    margin-top: 30px;
+  }
+
+  .box1, .box2, .box3 {
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 2px 4px 0px #2825230A, 0px 16px 32px -4px #2825231A;
+  }
+
+  .box1, .box3 {
+    background: #fff;
+  }
+
+  .box2 {
+    background: #514DF8;
+    color: #fff;
+  }
+
+  .box1 p, .box2 p, .box3 p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.75;
+  }
+
+  .box1 h5, .box2 h5, .box3 h5 {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #232323;
+  }
+
+  footer {
+    background: #DBDAFF;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .ftflex {
+    display: flex;
+    gap: 40px;
+  }
+
+  footer a {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 8px;
+    color: #000;
+  }
+
+  footer a:hover {
+    color: #514DF8;
+  }
+
+  footer p {
+    margin-top: 8px;
+  }
+
+.st {
+color : #fff !important;
+}
+
+h5+p {
+color: #000000BF;
+
+}
+
+.st+p {
+color : #fff
+}
+
+#ser {
+text-align : center;
+margin-bottom :15px;
+
+}
+
+hr {
+width : 5%;
+margin : 0 auto;
+}
+
+
+
+nav ul li a:hover {
+color: #514DF8;
+transition: color 0.3s ease;
+}
+
+
+.w:hover {
+background-color: #514DF8;
+transition: background-color 0.3s ease;
+}
+
+
+section button:nth-child(1):hover {
+background-color: #514DF8;
+color: #fff;
+transition: background-color 0.3s ease;
+}
+
+.btn1:hover {
+background-color: #08062d;
+transition: background-color 0.3s ease;
+}
+
+.btn2:hover {
+background-color: #514DF8;
+transition: background-color 0.3s ease;
+}
+
+nav {
+position: sticky;
+top: 0;
+background-color: #08062d;
+
+}
+
+
+@media (max-width: 768px) {
+nav {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  position : static;
+  
+}
+
+nav ul {
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+nav button {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.flexdiv {
+  flex-direction: column;
+  gap: 20px;
+}
+
+section h1 {
+  font-size: 48px;
+}
+
+.btn1, .btn2 {
+  width: 60%;
+  margin: 10px 0;
+}
+}
+
+
+  

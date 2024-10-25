@@ -1,0 +1,68 @@
+body {
+  background-color: #f0f4fa;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  
+}
+
+.ssd {
+  background-image: url('https://img.freepik.com/free-vector/blue-abstract-background_78370-97.jpg?semt=ais_hybrid');
+}
+
+.signin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.signin-box {
+  width: 350px;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1),
+              0px 16px 32px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.signin-box h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #08062d;
+}
+
+.signin-box label {
+  display: block;
+  text-align: left;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #232323;
+}
+
+.signin-box input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #d3d3d3;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.signin-box input:focus {
+  border-color: #514df8;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.signin-box .btn1 {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.signin-box .signup-link {
+  margin-top: 16
+}
