@@ -1,0 +1,207 @@
+//Q2. Area of rectangle using regular function and arrow function
+
+function areaRegular(length, width) {
+  return length * width;
+}
+
+const areaArrow = (length, width) => length * width;
+
+let length = 40;
+let width =  50;
+
+console.log("Area using regular function: " + areaRegular(length, width));
+console.log("Area using arrow function: " + areaArrow(length, width));
+
+
+
+
+
+
+//Q3. Create a object with properties such as title,authod,year published and method to display details
+
+const bookObj = {
+  title : "Presence",
+  author : "Amy Cuddy",
+  year : "2020",
+  displayDetails : function() {
+    console.log(this.title);
+    console.log(this.author);
+    console.log(this.year);
+  }
+}
+
+bookObj.displayDetails();
+
+
+
+
+//Q4. Given an  object represnting a car, use object destructuring to extract its properties.
+
+const carObj = {
+  make: 'Tata',
+  model: 'Nexon',
+  year: 2020,
+  color: 'Black'
+}
+
+const { make, model, year, color } = carObj;
+console.log(make, model, year, color);
+
+
+
+
+//Q5. Given an array of numbers, use array destrucuring to extract first two numbers
+
+const arr = [1, 2, 3, 4, 5, 6];
+
+const [a, b] = arr;
+console.log(a,b);
+
+
+
+
+//Q6. USe the map method to create a new array that contains the length of the names in the following array
+
+const arr = ["som","akshata","kiwi","milkie","kulfi"];
+const newArr = arr.map((el) => {
+  return el.length;
+})
+
+console.log(newArr);
+
+
+
+
+
+//Q7. Use the filter method to  create the new array only containing the even numbers from  given array.
+
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+const evenNum = arr.filter((num) => num % 2 === 0);
+
+
+console.log(evenNum);
+
+
+
+
+//Q8. Use the reduce  method to find the total price of items in shopping cart.
+
+const shoppingCart = [
+  { item: "Apple", price: 100 },
+  { item: "Banana", price: 40 },
+  { item: "Orange", price: 80 },
+  { item: "Mango", price: 200 }
+]
+
+const totalPrice = shoppingCart.reduce((total, item) => total + item.price, 0);
+
+console.log(totalPrice);
+
+
+
+
+//Q9. Create a function that takes any number of arguments and returns there sum using the rest operator
+
+let sum = (...args) => {
+  let total = 0;
+  for (let i = 0; i < args.length; i++) {
+    total += args[i];
+  }
+  return total;
+}
+
+console.log(sum(1, 2, 3, 4, 5));
+
+
+
+
+//Q10. Use the spread operator to merge the two arrays of fruits.
+
+let fruits1 = ["apple", "banana"];
+let fruit2 = ["orange", "grape"];
+let fruits = [...fruits1, ...fruit2];
+
+console.log(fruits);
+
+
+
+
+//Q11. Write a function that accepts a callback and executes it after a delay.
+
+function  greeting(callback,name){
+  setTimeout(function(){
+    callback(name);
+  },3000);
+}
+
+function callback(name) {
+  console.log("Hello " + name);
+}
+
+
+greeting(callback, "Kiwi");
+
+
+
+
+//Q12. Create a promiss that resolves with a messege after 3 seconds.
+
+const { rejects } = require("assert");
+const { resolve } = require("dns");
+
+let mypromiss  = new Promise((resolve,rejects)=>{
+  setTimeout(()=>{
+    resolve("Program Succesfully Executed");
+  },3000)
+})
+
+mypromiss.then((value)=>{
+  console.log(value);
+})
+
+
+
+
+//Q13. Create a function that returns another function, demonstrating closure
+
+
+function createGreeting(greeting) {
+  return function(name) {
+    return `${greeting}, ${name}!`;
+  };
+}
+
+const sayHello = createGreeting("Hello");
+console.log(sayHello("Kiwi")); 
+
+const sayGoodbye = createGreeting("Goodbye");
+console.log(sayGoodbye("Kiwi")); 
+
+
+
+
+//Q14. Use async/await to fetch data from public API and log it to the console.
+
+const fetchData = async () => {
+  const response = await fetch("https://official-joke-api.appspot.com/random_joke");
+  const data = await response.json();
+  console.log(data);
+}
+
+
+fetchData();
+
+
+
+
+//Q15. Create a function that takes an array of numbers, applies a filter to keep only even numbers,than use map to double  those numbers and finally return the totoal using reduce.
+
+const arr = [1,2,3,4,5,6,7,8,9,10];
+
+const evenDoubleSum = arr.filter(num => num % 2 === 0).map(num => num * 2).reduce( (acc, num) => acc + num, 0);
+
+console.log(evenDoubleSum);
+
+
+
