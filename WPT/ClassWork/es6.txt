@@ -1,0 +1,164 @@
+ES6
+
+Template Literal
+
+* let firstname = 'som'
+  let lastname = 'gupta'
+  let fullname = `${firstname} ${lastname}`
+* solves the issue of concatination, "", ''.
+
+Destructuring Objects
+
+* const player = {
+  name: 'Lebron James',
+  club: 'LA Lakers',
+  address: {
+    city: 'Los Angeles'
+  }
+}
+
+const {name,club,address:{city}}  = player
+console.log(name)  //lebron james
+
+
+Object Literals
+
+* function addressMaker(city, state) {
+    const newAdress = {city, state};
+    
+    console.log(newAdress);
+}
+
+addressMaker('Austin', 'Texas'); // city:austin,state:texas
+
+
+
+For of loop
+
+* let str = "hello world"
+
+  for(int char of str) {
+     console.log(char)
+}
+
+
+Spread Operator
+
+* let name = ['kiwi','kulfi','milki']
+  let newname = name //they refrensing the same array
+  let newname = [...name] // new array with name array values
+
+Rest Operator
+
+* function add(...nums) {
+    
+    console.log(nums); //it will print array
+}
+
+add(4, 5, 7, 8, 12) 
+
+
+
+Arrow Functions
+Default parameters
+
+
+Includes
+* let arr = [2,4,5]
+arr.includes(2) // return boolean
+
+
+let and const
+
+
+export and import
+
+* import { data } from './example.js';
+* export const data = [1,2,3];
+
+
+padStart() & padEnd()
+
+
+
+class
+
+* class Animal {
+
+  constructor(type,legs) {
+    this.type = type;
+    this.legs = legs;
+
+}
+}
+
+* let cat = new Animal('cat',4)
+
+
+Trailing commas
+
+Promises
+
+Fetch
+
+* fetch('https://jsonplaceholder.typicode.com/comments/1')
+    .then(response => response.json())
+    .then(data => console.log(data))
+
+Async Await
+
+* const photos = [];
+
+async function photoUpload() {
+    let uploadStatus = new Promise( (resolve, reject) => {
+        setTimeout( () => {
+            photos.push("Profile Pic");
+            resolve("Photo Uploaded")
+        }, 3000)
+    })
+    
+    let result = await uploadStatus;
+    
+    console.log(result);
+    console.log(photos.length);
+}
+
+photoUpload();
+
+
+* const apiUrl = "https://api.chucknorris.io/jokes/random";
+
+async function getJoke() {
+    const response = await fetch(apiUrl);
+    const data = await response.json();
+    
+    console.log(data.value);
+}
+
+getJoke();
+
+
+
+Sets
+
+* creating unique list, no duplicate
+* const testset = new Set([1,1,2,3]) // 1,2,3
+* testset.add(5), testset.delete(), testset.clear(), testset.has(5)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
